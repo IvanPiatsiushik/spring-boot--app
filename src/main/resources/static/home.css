@@ -14,7 +14,7 @@ body{
     width: 1000px;
     height: 740px;
     margin: auto;
-    background-image: url(/templates/img/main.png);
+    background-image: url(/static/img/main.png);
 
 }
 .header{

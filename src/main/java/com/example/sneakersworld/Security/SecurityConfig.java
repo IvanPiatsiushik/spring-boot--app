@@ -1,6 +1,7 @@
-package sportnews.demo.web.SecurityConfig;
+package com.example.sneakersworld.Security;
 
 
+import com.example.sneakersworld.model.Role;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -12,8 +13,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.stereotype.Controller;
-import sportnews.demo.model.Role;
-
 
 @Controller
 @EnableWebSecurity
@@ -25,8 +24,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/").permitAll()
-                .antMatchers(HttpMethod.POST,"/add").hasRole(Role.ADMIN.name())
-                .antMatchers(HttpMethod.GET,"/addNews").hasRole(Role.ADMIN.name())
+                .antMatchers(HttpMethod.POST,"/home").hasRole(Role.ADMIN.name())
+                .antMatchers(HttpMethod.GET,"/news").hasRole(Role.ADMIN.name())
                 .anyRequest()
                 .authenticated()
                 .and()
