@@ -13,4 +13,8 @@ public class HomeController {
     public String news(){
         return "/news";
     }
+    @GetMapping("/addNews")
+    public String addNews(){
+        return "addNews";
+    }
 }

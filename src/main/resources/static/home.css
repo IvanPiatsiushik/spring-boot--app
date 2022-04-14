@@ -30,10 +30,6 @@ body{
     display: inline-flex;
     list-style-type: none;
 }
-.log{
-    margin-left: 760px;
-    margin-top: -80px;
-}
 .menu2{
     margin-left: 790px;
     margin-top: -80px;
@@ -46,7 +42,7 @@ body{
 }
 .desc-bottom{
     margin-left: -50px;
-    margin-top: 392px;
+    margin-top: 343px;
 }
 .bottom li{
     list-style-type: none;

@@ -14,11 +14,14 @@ public class News {
     private String contain;
     private String urlPicture;
 
+//    public News(String name){
+//
+//    }
+
     public News() {
     }
 
-    public News(Long id, String name, String contain, String urlPicture) {
-        this.id = id;
+    public News(String name, String contain, String urlPicture) {
         this.name = name;
         this.contain = contain;
         this.urlPicture = urlPicture;

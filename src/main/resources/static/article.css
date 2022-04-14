@@ -10,7 +10,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    background: #dcdcdc;
+    /*background: #dcdcdc;*/
 }
 .menu li a {
     text-decoration: none;
@@ -41,42 +41,49 @@ body{
     margin-left: 40px;
 }
 .footer{
-    background: #dcdcdc;
+    /*background: #dcdcdc;*/
     padding: 10px;
 }
 .h1{
-    background: #dcdcdc;
+    /*background: #dcdcdc;*/
+    margin:auto;
+    /*border: black solid 1px;*/
+    width: 600px;
+    font-size: 48px;
+    font-family: 'francois_oneregular';
+    color: #292929;
+    letter-spacing: .5px;
+    /*margin: 0 0 17px;*/
+    line-height: 50px;
 }
 .section1{
     padding: 10px;
     height:auto;
-    background: #dcdcdc;
+    /*background: #dcdcdc;*/
 }
 .containers{
     margin-top: -10px;
 }
 .container1{
-    margin-top: 0px;
-    margin-left: 10px;
-    width: 323px;
-    height: 326px;
-}
-.container1\.1{
-    /*background-image: url(img/news/air-jordan-1-low-black-white-homage-release-date.jpg);*/
-    width: 323px;
-    height: 226px;
-}
-.container1\.2{
-    width: 323px;
-    height: 100px;
-    font-size: 20px;
-    margin-left: 0px;
-    /*border: black solid 5px;*/
-    margin-top: 10px;
-    text-decoration: none;
+    /*margin-top: 0px;*/
+    /*margin-left: 10px;*/
+    /*width: 323px;*/
+    /*height: 326px;*/
 }
 .addNews{
     margin-left: -56px;
-
 }
-
+.img{
+    width: 980px;
+    padding-top:  10px;
+}
+.text{
+    width: 600px;
+    margin-left: 150px;
+    color: #646464;
+    font-size: 20px;
+    /*font-family: 'rubikregular';*/
+    font-family: 'Square Peg', cursive;
+    line-height: 28px;
+    display: inline-block;
+}
