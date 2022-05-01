@@ -1,0 +1,14 @@
+com\example\sneakersworld\controllers\HistoryController.class
+com\example\sneakersworld\model\Review.class
+com\example\sneakersworld\model\News.class
+com\example\sneakersworld\Security\SecurityConfig.class
+com\example\sneakersworld\config\ParsingNews.class
+com\example\sneakersworld\repository\HistoryRepository.class
+com\example\sneakersworld\controllers\ArticleController.class
+com\example\sneakersworld\controllers\AddNewsController.class
+com\example\sneakersworld\SneakersWorldApplication.class
+com\example\sneakersworld\repository\NewsRepository.class
+com\example\sneakersworld\controllers\HomeController.class
+com\example\sneakersworld\config\MvcConfig.class
+com\example\sneakersworld\model\Role.class
+com\example\sneakersworld\model\History.class
