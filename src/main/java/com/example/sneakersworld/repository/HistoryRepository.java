@@ -1,11 +1,9 @@
 package com.example.sneakersworld.repository;
 
-import com.example.sneakersworld.model.News;
+import com.example.sneakersworld.model.History;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface NewsRepository extends JpaRepository<News,Long> {
-
-//    Iterable<News> findNewsByIdOrderById ();
+public interface HistoryRepository extends JpaRepository<History,Long> {
 }

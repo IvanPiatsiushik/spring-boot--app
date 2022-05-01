@@ -5,25 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Template</title>
+    <title>Новости</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../static/article.css">
 </head>
 <body  >
-<header class="header" >
-    <div class="container">
-        <ul class="menu">
-            <li><a href="add" style="color: black">Новости</a></li>
-            <li  class="history"><a href="#" style="color: #CE4545">История</a></li>
-            <li ><span ><a href="#" style="color: #2957CE">Контакты</a></span></li>
-            <li><a href="#" style="color: black">Обзор</a></li>
-            <li><a href="home"><img class="log" src="/static/img/Logo.png" ></a></li>
-            <!--            <li class="addNews"><a href="addNews" style="color: black">Добавить</a></li>-->
-        </ul>
-    </div>
-</header>
+<header th:insert="basic/header :: header"></header>
 <section class="section1" >
     <div class="containers">
         <div class="container1">
@@ -55,15 +44,7 @@
         </div>
     </div>
 </section>
-<footer class="footer">
-    <div class="desc-bottom">
-        <ul class="bottom">
-            <li></li><img src="/static/img/logotips/converse-transparent-logo-5.png" alt="converse"  ></li>
-            <li><img src="/static/img/logotips/puma.png" alt="puma" ></li>
-            <li><img src="/static/img/logotips/umbro.png" alt="umbro" ></li>
-            <li><img src="/static/img/logotips/nike.png" alt="nike" ></li>
-        </ul>
-    </div>
-</footer>
+<hr>
+<footer th:insert="basic/footer::footer"></footer>
 </body>
 </html>
