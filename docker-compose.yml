@@ -1,10 +1,10 @@
 version: '3'
 services:
-  postgresdb:
+  postgres_db:
     image: 'postgres'
-    container_name: 'java-postgres'
+    container_name: 'pg_db2'
     ports:
-    - "5432:5432"
+    - "543:543"
     volumes:
       - ./pg_data:/var/lib/postgresql/data/pgdata
     environment:
@@ -13,11 +13,11 @@ services:
       - POSTGRES_DB=postgres
       - PGDATA=/var/lib/postgresql/data/pgdata
     restart: always
-  app:
+  app_snk:
     build: ./
-    container_name: 'java-app'
+    container_name: 'sneaker'
     ports:
-      - "3000:3000"
+      - "3033:3033"
     environment:
-     - POSTGRES_HOST=postgresdb
+     - POSTGRES_HOST=postgres_db
     restart: always

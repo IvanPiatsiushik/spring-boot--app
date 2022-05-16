@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,21 @@
     <link rel="stylesheet" href="../../static/add.css">
 </head>
 <body  >
+<div class="main">
 <header th:insert="basic/header :: header"></header>
 <hr style="margin-top: -25px">
-<section class="section1" >
+<section class="section_left">
+    <div class="block" ><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/df091851788549.59084441ecd77.png"  style="padding-top: 10px;width: 220px" alt=""></div>
+    <div class="block" ></div>
+    <div class="block"  ><img src="https://i.pinimg.com/originals/0a/35/10/0a35107bad036d0e07ffea09b78e6394.png" style="width: 220px;padding-top: 10px" alt="">
+    </div>
+</section>
+<section class="section_right">
+    <a href="#" style="text-decoration: none"> <div class="block" ><img src="https://superpuper.ru/images/reserves/4d4a967e08303f990e104a8980cb0f4c.jpg" style="width:220px;padding-top: 10px" alt=""><h1 style="font-family: 'Square Peg', cursive;margin-top: -5px;color: #CE4545">MyCollection</h1></div></a>
+    <div class="block" style="font-size: 15px;font-family: 'Square Peg', cursive" ><p>В разделе MyCollection вы можете собрать вашу коллекцию кроссовок.</p></div>
+    <div class="block" ></div>
+</section>
+<section class="section1" style="margin-top: 210px">
 
     <div th:each="el : ${history}"  class="alert alert-info mt-2">
 
@@ -24,22 +36,23 @@
                     <a th:href="${el.historyPage}">  <img th:src="${el.urlPicture}"
                                       style="width: 300px" alt="" ></a>
                 </div>
-<!--                <div class="container1.2">-->
-<!--                    <a th:href="${el.historyPage}" ></a>-->
-<!--                </div>-->
+                <div class="container1.2">
+                    <a th:href="${el.historyPage}" ></a>
+                </div>
             </div>
             <div class="container2" th:unless="${el.id%2==0}">
                 <div class="container1.1">
                     <a th:href="${el.historyPage}">  <img th:src="${el.urlPicture} "
                                       style="width: 300px" alt="" ></a>
                 </div>
-<!--                <div class="container1.2">-->
-<!--                    <a th:href="${el.historyPage}" ></a>-->
-<!--                </div>-->
+                <div class="container1.2">
+                    <a th:href="${el.historyPage}" ></a>
+                </div>
             </div>
         </div>
 </section>
 <hr>
 <footer th:insert="basic/footer::footer"></footer>
+</div>
 </body>
 </html>

@@ -8,16 +8,36 @@ import javax.persistence.Id;
 @Entity
 public class History {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
     private String name ;
     private String historyPage;
     private String urlPicture;
+    private String picture;
+    private String text;
 
-    public History(String name, String historyPage, String urlPicture) {
+    public History(String name, String historyPage, String urlPicture,String picture,String text) {
         this.name = name;
         this.historyPage = historyPage;
         this.urlPicture = urlPicture;
+        this.picture = picture;
+        this.text = text;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public Long getId() {
@@ -53,5 +73,17 @@ public class History {
     }
 
     public History() {
+    }
+
+    @Override
+    public String toString() {
+        return "History{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", historyPage='" + historyPage + '\'' +
+                ", urlPicture='" + urlPicture + '\'' +
+                ", picture='" + picture + '\'' +
+                ", text='" + text + '\'' +
+                '}';
     }
 }

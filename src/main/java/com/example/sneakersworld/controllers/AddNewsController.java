@@ -15,7 +15,7 @@ public class AddNewsController {
 
     @Autowired
     private NewsRepository newsRepository;
-    @GetMapping("/add")
+    @GetMapping("/news")
     public String news(Model model){
     Iterable<News> news = newsRepository.findAll(Sort.by("id").descending());
 
@@ -29,7 +29,7 @@ public class AddNewsController {
 
         Iterable<News> news1 = newsRepository.findAll(Sort.by("id").descending());
         model.addAttribute("news",news1);
-        return "news";
+        return "redirect:news";
     }
 
 }
