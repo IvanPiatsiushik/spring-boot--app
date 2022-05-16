@@ -1,5 +1,4 @@
 com/example/sneakersworld/repository/HistoryRepository.class
-com/example/sneakersworld/config/ParsingNews.class
 com/example/sneakersworld/model/History.class
 com/example/sneakersworld/controllers/AddNewsController.class
 com/example/sneakersworld/model/Review.class

@@ -3,7 +3,6 @@
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/HomeController.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/model/Role.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/ArticleController.java
-/home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/config/ParsingNews.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/config/MvcConfig.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/AddNewsController.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/AddHistoryController.java
