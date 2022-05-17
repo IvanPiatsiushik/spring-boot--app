@@ -12,24 +12,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class AddNewsController {
-
     @Autowired
     private NewsRepository newsRepository;
-    @GetMapping("/news")
-    public String news(Model model){
-    Iterable<News> news = newsRepository.findAll(Sort.by("id").descending());
 
-    model.addAttribute("news",news);
-        return "news";
+    @GetMapping("/add_news")
+    public String add(){
+        return "/add/add_news";
     }
-    @PostMapping ("/add")
-    public String addNews(@RequestParam String name,@RequestParam String contain ,@RequestParam String urlPicture, Model model){
+
+    @PostMapping ("/add_news")
+    public String add_news(@RequestParam String name,@RequestParam String contain ,@RequestParam String urlPicture, Model model){
         News news = new News(name,contain,urlPicture);
         newsRepository.save(news);
-
-        Iterable<News> news1 = newsRepository.findAll(Sort.by("id").descending());
-        model.addAttribute("news",news1);
         return "redirect:news";
     }
-
 }

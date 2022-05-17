@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class History {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id ;
     private String name ;
     private String historyPage;
@@ -22,6 +22,9 @@ public class History {
         this.urlPicture = urlPicture;
         this.picture = picture;
         this.text = text;
+    }
+
+    public History() {
     }
 
     public String getPicture() {
@@ -72,8 +75,6 @@ public class History {
         this.urlPicture = urlPicture;
     }
 
-    public History() {
-    }
 
     @Override
     public String toString() {

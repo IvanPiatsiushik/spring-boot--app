@@ -14,10 +14,6 @@ public class News {
     private String contain;
     private String urlPicture;
 
-//    public News(String name){
-//
-//    }
-
     public News() {
     }
 
