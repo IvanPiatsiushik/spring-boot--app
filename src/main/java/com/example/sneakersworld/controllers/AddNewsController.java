@@ -17,7 +17,7 @@ public class AddNewsController {
 
     @GetMapping("/add_news")
     public String add(){
-        return "/add/add_news";
+        return "add/add_news";
     }
 
     @PostMapping ("/add_news")
