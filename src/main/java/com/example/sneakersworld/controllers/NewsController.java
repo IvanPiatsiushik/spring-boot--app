@@ -3,6 +3,7 @@ package com.example.sneakersworld.controllers;
 import com.example.sneakersworld.model.News;
 import com.example.sneakersworld.repository.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +16,7 @@ public class NewsController {
 
     @GetMapping("/news")
     public String news(Model model){
+//        Iterable<News> news = newsRepository.findAll(Sort.sort(news()));
         Iterable<News> news = newsRepository.findAll(Sort.by("id").descending());
 
         model.addAttribute("news",news);

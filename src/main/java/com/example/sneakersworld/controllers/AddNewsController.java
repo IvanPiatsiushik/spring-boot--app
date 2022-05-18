@@ -3,12 +3,14 @@ package com.example.sneakersworld.controllers;
 import com.example.sneakersworld.model.News;
 import com.example.sneakersworld.repository.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.Optional;
 
 @Controller
 public class AddNewsController {
@@ -26,4 +28,9 @@ public class AddNewsController {
         newsRepository.save(news);
         return "redirect:news";
     }
+    @GetMapping("/news/pages/{id}")
+    public String page(@PathVariable Long id , Model model){
+        Optional<News> news = newsRepository.findById(id);
+        model.addAttribute("news1",news);
+        return "pages";}
 }

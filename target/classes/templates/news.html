@@ -32,18 +32,18 @@
 
          <div class="containers" >
                 <div class="container1" th:if="${el.id%2==0}">
-                    <a th:href="${el.contain}"> <img th:src="${el.urlPicture}" alt="" style="width: 323px;height: 226px;"></a>
+                    <a th:href="@{/news/pages/{id}(id=${el.getId()})}"> <img th:src="${el.urlPicture}" alt="" style="width: 323px;height: 226px;"></a>
                     <!--                        <a th:href="${el.contain}"> <div class="container1.1" th:style="'background-image:url(' + ${el.urlPicture} + ');'"></div></a>-->
                         <div class="container1.2">
-                            <a th:href="${el.contain}" th:text="${el.name}"></a>
+                            <a th:href="@{/news/pages/{id}(id=${el.getId()})}" th:text="${el.name}"></a>
                         </div>
                 </div>
 
                 <div class="container2" th:unless="${el.id%2==0}">
-                    <a th:href="${el.contain}"> <img th:src="${el.urlPicture}" alt="" style="width: 323px;height: 226px;"></a>
+                    <a th:href="@{/news/pages/{id}(id=${el.getId()})}"> <img th:src="${el.urlPicture}" alt="" style="width: 323px;height: 226px;"></a>
 <!--                    <a th:href="${el.contain}">   <div class="container1.1" th:style="'background-image:url(' + ${el.urlPicture} + ');'"></div></a>-->
                         <div class="container1.2">
-                            <a th:href="${el.contain}" th:text="${el.name}"></a>
+                            <a th:href="@{/news/pages/{id}(id=${el.getId()})}" th:text="${el.name}"></a>
                         </div>
                 </div>
          </div>
