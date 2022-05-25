@@ -5,6 +5,7 @@ HELP.md
 #!**/src/test/**/target/
 #!**/src/test/**/target/
 /pg_data
+/uploads
 ### STS ###
 .apt_generated
 .classpath

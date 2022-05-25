@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/article.css">
+    <link rel="icon" type="images/png" href="favicon.png">
+
 </head>
 <body>
 <div class="main">
@@ -28,10 +30,20 @@
     </section>
     <section class="section1" style="height: auto;margin-top: 220px;margin-left: 130px"  >
         <div   class="alert alert-info mt-2">
-            <div class="containers" >
-                <div >
-                    <img th:src="${news1.get().getUrlPicture()}" style="width: 800px;padding: 10px">
-                    <div th:text="${news1.get.getName()}" class="text"></div>
+            <div class="containers">
+                <div>
+                    <img th:src="${news1.get.getFilename()}" style="width: 800px;padding: 10px">
+                    <div th:text="${news1.get.getName()}" class="text1" style="font-size:35px;margin-left: 10px"></div>
+                    <div th:text="${news1.get.getContain()}" class="text" style="margin-top: 20px"></div>
+                    <img th:src="${news1.get.getFilename2()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename3()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename4()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename5()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename6()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename7()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename8()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename9()}" style="width: 800px;padding: 10px">
+                    <img th:src="${news1.get.getFilename10()}" style="width: 800px;padding: 10px">
                 </div>
             </div>
         </div>

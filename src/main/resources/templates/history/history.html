@@ -33,8 +33,8 @@
         <div class="containers" >
             <div class="container1" th:if="${el.id%2==0}">
                 <div class="container1.1" >
-                    <a th:href="@{/history/page/{id}(id=${el.getId()})}">  <img th:src="${el.urlPicture}"
-                                      style="width: 300px" alt="" ></a>
+                    <a th:href="@{/history/page/{id}(id=${el.getId()})}" >  <img th:src="${el.main_photo}"
+                                      style="width: 300px" alt="" ><p th:text="${el.name}"></p></a>
                 </div>
                 <div class="container1.2">
                     <a th:href="@{/history/page/{id}(id=${el.getId()})}" ></a>
@@ -43,8 +43,8 @@
             </div>
             <div class="container2" th:unless="${el.id%2==0}">
                 <div class="container1.1">
-                    <a th:href="@{/history/page/{id}(id=${el.getId()})}">  <img th:src="${el.urlPicture} "
-                                      style="width: 300px" alt="" ></a>
+                    <a th:href="@{/history/page/{id}(id=${el.getId()})}">  <img th:src="${el.main_photo}"
+                                       style="width: 300px" alt="" ><p th:text="${el.name}"></p></a>
                 </div>
                 <div class="container1.2">
                     <a th:href="@{/history/page/{id}(id=${el.getId()})}" ></a>

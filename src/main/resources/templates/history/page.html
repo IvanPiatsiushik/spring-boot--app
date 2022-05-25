@@ -31,7 +31,8 @@
     <div   class="alert alert-info mt-2">
         <div class="containers" >
                 <div >
-                    <img th:src="${histories.get().getPicture()}" style="width: 800px;padding: 10px">
+                    <img th:src="${histories.get().main_photo}" style="width: 800px;padding: 10px">
+                    <p th:text="${histories.get.getName()}" style="margin-left: 10px"></p>
                     <div th:text="${histories.get.getText()}" class="text"></div>
                 </div>
             </div>

@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../static/addNews.css">
+    <link rel="icon" type="images/png" href="favicon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -12,12 +14,10 @@
 <body class="addBody" background="https://gamerwall.pro/uploads/posts/2021-11/1637071150_52-gamerwall-pro-p-prozrachnaya-tekstura-oboi-na-zastavku-52.jpg">
 <div class="container mt-5 mb-5">
     <h1>Добавьте статью в раздел "history"</h1>
-    <form action="/add_history" method="post">
+    <form action="/add_history" method="post" enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Введите название компании" class="form-control"><br>
         <textarea  name="text" placeholder="Введите полный текст  статьи" class="form-control"></textarea><br>
-        <input type="text" name="urlPicture" placeholder="Введите адресс изображения(main_page)" class="form-control"><br>
-        <input type="text" name="picture" placeholder="Введите адресс изображения(article_page)" class="form-control"><br>
-        <input type="text" name="historyPage" placeholder="Введите номер отображения страницы" class="form-control"><br>
+        <input type="file" name="main_photo" ><br><br>
         <button type="submit" class="btn btn-success">Добавить статью</button>
     </form>
 </div>

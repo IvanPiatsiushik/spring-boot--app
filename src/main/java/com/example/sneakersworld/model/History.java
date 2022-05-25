@@ -11,29 +11,19 @@ public class History {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id ;
     private String name ;
-    private String historyPage;
-    private String urlPicture;
-    private String picture;
     private String text;
+    private String main_photo;
 
-    public History(String name, String historyPage, String urlPicture,String picture,String text) {
+    public History(String name,String text ,String finish_name) {
         this.name = name;
-        this.historyPage = historyPage;
-        this.urlPicture = urlPicture;
-        this.picture = picture;
         this.text = text;
+        this.main_photo = finish_name;
     }
 
     public History() {
     }
 
-    public String getPicture() {
-        return picture;
-    }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
 
     public String getText() {
         return text;
@@ -59,32 +49,12 @@ public class History {
         this.name = name;
     }
 
-    public String getHistoryPage() {
-        return historyPage;
+
+    public String getMain_photo() {
+        return main_photo;
     }
 
-    public void setHistoryPage(String historyPage) {
-        this.historyPage = historyPage;
-    }
-
-    public String getUrlPicture() {
-        return urlPicture;
-    }
-
-    public void setUrlPicture(String urlPicture) {
-        this.urlPicture = urlPicture;
-    }
-
-
-    @Override
-    public String toString() {
-        return "History{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", historyPage='" + historyPage + '\'' +
-                ", urlPicture='" + urlPicture + '\'' +
-                ", picture='" + picture + '\'' +
-                ", text='" + text + '\'' +
-                '}';
+    public void setMain_photo(String main_photo) {
+        this.main_photo = main_photo;
     }
 }

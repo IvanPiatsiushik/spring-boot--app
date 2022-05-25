@@ -23,7 +23,7 @@
 //        http
 //                .csrf().disable()
 //                .authorizeRequests()
-//                .antMatchers("/").permitAll()
+//                .antMatchers("/","/news/**","/history/**","/images/**").permitAll()
 //                .antMatchers(HttpMethod.POST,"/addNews").hasRole(Role.ADMIN.name())
 //                .antMatchers(HttpMethod.GET,"/addNews").hasRole(Role.ADMIN.name())
 //                .anyRequest()
@@ -38,7 +38,7 @@
 //
 //                User.builder()
 //                        .username("admin")
-//                        .password(passwordEncoder().encode("admin"))
+//                        .password(passwordEncoder().encode("12$Admin09"))
 //                        .roles(Role.ADMIN.name())
 //                        .build(),
 //                User.builder()
