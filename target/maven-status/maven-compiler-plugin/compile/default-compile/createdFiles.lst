@@ -3,6 +3,7 @@ com/example/sneakersworld/model/History.class
 com/example/sneakersworld/controllers/NewsController.class
 com/example/sneakersworld/controllers/AddNewsController.class
 com/example/sneakersworld/model/Review.class
+com/example/sneakersworld/Security/SecurityConfig.class
 com/example/sneakersworld/config/MvcConfig.class
 com/example/sneakersworld/controllers/HomeController.class
 com/example/sneakersworld/controllers/AddHistoryController.class
