@@ -23,7 +23,7 @@ import static java.lang.String.valueOf;
 
 @Controller
 public class AddNewsController {
-    @Value("/home/lenovo/IdeaProjects/sneakersWorld/uploads")
+    @Value("${upload.path}")
     private String uploadPath;
     @Autowired
     private NewsRepository newsRepository;

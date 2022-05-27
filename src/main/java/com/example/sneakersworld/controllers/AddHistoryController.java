@@ -19,7 +19,7 @@ import java.util.UUID;
 
 @Controller()
 public class AddHistoryController {
-    @Value("/home/lenovo/IdeaProjects/sneakersWorld/uploads")
+    @Value("${upload.path}")
     private String uploadPath;
     @Autowired
     private final HistoryRepository historyrepository;
