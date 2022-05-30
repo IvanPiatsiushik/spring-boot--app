@@ -107,3 +107,82 @@ body{
 .main{
     background: white;
 }
+@media only  screen and (max-width: 517px) {
+
+    body{
+        width: 100%;
+        height:100%;
+        margin: auto;
+        /*border: 4px solid black;*/
+        background-color: #363535;
+        padding: 0;
+        color: black;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .menu li a {
+        text-decoration: none;
+
+    }
+    .menu{
+        /*width: 100%;*/
+        margin: auto;
+        /*margin-left: -20px;*/
+        /*margin-top: 55px;*/
+        display:table ;
+        list-style-type: none;
+    }
+    .log{
+        margin-top: -88px;
+        margin-left: 138px;
+        width: 30%;
+    }
+    .review{
+        color: white;
+    }
+    .header{
+        position: static;
+        color: white;
+    }
+    .bottom{
+        display: inline-block;
+    }
+    .bottom li{
+
+        display: table;
+        margin: auto;
+    }
+    .desc-bottom{
+        margin-top: -180px;
+    }
+    .footer{
+        margin: auto;
+    }
+    .containers{
+        margin-top: -90px;
+    }
+    .header{
+        position: static;
+        margin-top: 0px;
+    }
+    .container{
+        background: white;
+    }
+    .hr{
+        margin-top: -10px;
+    }
+    .container1{
+        margin: auto;
+        width: 323px;
+        height: 326px;
+    }
+    .container2{
+        margin: auto;
+        width: 323px;
+        height: 326px;
+    }
+    .section1{
+        margin-top: 100px;
+    }
+}
+

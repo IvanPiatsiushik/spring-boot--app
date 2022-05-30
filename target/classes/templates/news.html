@@ -9,26 +9,37 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/add.css">
+  <link rel="stylesheet" href="/static/news.css">
   <link rel="icon" type="images/png" href="favicon.png">
 
 </head>
 <body>
 <div class="main">
-  <header th:insert="basic/header :: header"></header>
-  <hr style="margin-top: -25px">
-  <section class="section_left">
-    <div class="block" ><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/df091851788549.59084441ecd77.png"  style="padding-top: 10px;width: 220px" alt=""></div>
-    <div class="block" ></div>
-    <div class="block"  ><img src="https://i.pinimg.com/originals/0a/35/10/0a35107bad036d0e07ffea09b78e6394.png" style="width: 220px;padding-top: 10px" alt="">
+  <header class="header">
+    <div class="container">
+      <ul class="menu">
+        <li><a href="/news" style="color: #8cd08c">Новости</a></li>
+        <li  class="history"><a href="/history" style="color: #CE4545">История</a></li>
+        <li ><span ><a href="#" style="color: #2957CE">Коллекция</a></span></li>
+        <li><a href="#" style="color: black">Обзор</a></li>
+        <li><a href="/"><img class="log" src="/static/img/Logo.png" ></a></li>
+      </ul>
     </div>
-  </section>
-  <section class="section_right">
-    <a href="#" style="text-decoration: none"> <div class="block" ><img src="https://superpuper.ru/images/reserves/4d4a967e08303f990e104a8980cb0f4c.jpg" style="width:220px;padding-top: 10px" alt=""><h1 style="font-family: 'Square Peg', cursive;margin-top: -5px;color: #CE4545">MyCollection</h1></div></a>
-    <div class="block" style="font-size: 15px;font-family: 'Square Peg', cursive" ><p>В разделе MyCollection вы можете собрать вашу коллекцию кроссовок.</p></div>
-    <div class="block" ></div>
-  </section>
-  <section class="section1"  style="height: auto;margin-top: 220px;margin-left: 7px">
+  </header>
+<!--  <header th:insert="basic/header :: header"></header>-->
+  <hr class="hr">
+<!--  <section class="section_left">-->
+<!--    <div class="block" ><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/df091851788549.59084441ecd77.png"  style="padding-top: 10px;width: 220px" alt=""></div>-->
+<!--    <div class="block" ></div>-->
+<!--    <div class="block"  ><img src="https://i.pinimg.com/originals/0a/35/10/0a35107bad036d0e07ffea09b78e6394.png" style="width: 220px;padding-top: 10px" alt="">-->
+<!--    </div>-->
+<!--  </section>-->
+<!--  <section class="section_right">-->
+<!--    <a href="#" style="text-decoration: none"> <div class="block" ><img src="https://superpuper.ru/images/reserves/4d4a967e08303f990e104a8980cb0f4c.jpg" style="width:220px;padding-top: 10px" alt=""><h1 style="font-family: 'Square Peg', cursive;margin-top: -5px;color: #CE4545">MyCollection</h1></div></a>-->
+<!--    <div class="block" style="font-size: 15px;font-family: 'Square Peg', cursive" ><p>В разделе MyCollection вы можете собрать вашу коллекцию кроссовок.</p></div>-->
+<!--    <div class="block" ></div>-->
+<!--  </section>-->
+  <section class="section1">
 
     <div th:each="el : ${news}"  class="alert alert-info mt-2">
 

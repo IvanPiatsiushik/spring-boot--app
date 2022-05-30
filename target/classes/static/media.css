@@ -1,0 +1,34 @@
+@media only  screen and (max-width: 1200px) {
+
+}
+@media only  screen and (max-width: 922px) {
+
+
+}
+@media only  screen and (max-width: 768px) {
+
+}
+@media only  screen and (max-width: 480px) {
+    .mainPicture{
+        width: 300px;
+    }
+    body{
+        width: 300px;
+    }
+    .menu{
+        margin-left: 3px;
+        margin-top: 5px;
+    }
+}
+@media only  screen and (max-width: 320px) {
+    .mainPicture{
+        width: 300px;
+    }
+    body{
+        width: 300px;
+    }
+    .menu{
+        margin-left: 3px;
+        margin-top: 5px;
+    }
+}
