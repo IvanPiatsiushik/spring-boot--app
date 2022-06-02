@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Обзор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/review.css">
+    <link rel="icon" type="images/png" href="favicon.png">
+</head>
+<body>
+<div class="main">
+    <header th:insert="basic/header :: header"></header>
+    <hr class="hr">
+    <section class="section_review">
+        <div><a href="add_review" class="add_review"> <button class="button_rev">Оставить отзыв</button></a></div>
+    </section>
+<!--    <section class="section1">-->
+<!--        <div th:each="el : ${review}"  class="alert alert-info mt-2">-->
+<!--            <div class="containers" >-->
+<!--                <div class="container1" th:if="${el.id%2==0}">-->
+<!--                    <a th:href="@{/review/pagess/{id}(id=${el.getId()})}"> <img th:src="${el.filename1}" alt="" style="width: 323px;height: 226px;"></a>-->
+<!--                    <div class="container1.2">-->
+<!--                        <a th:href="@{/review/pagess/{id}(id=${el.getId()})}" th:text="${el.name}"></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="container2" th:unless="${el.id%2==0}">-->
+<!--                    <a th:href="@{/review/pagess/{id}(id=${el.getId()})}"> <img th:src="${el.filename1}" alt="" style="width: 323px;height: 226px;"></a>-->
+<!--                    &lt;!&ndash;                    <a th:href="${el.contain}">   <div class="container1.1" th:style="'background-image:url(' + ${el.urlPicture} + ');'"></div></a>&ndash;&gt;-->
+<!--                    <div class="container1.2">-->
+<!--                        <a th:href="@{/review/pagess/{id}(id=${el.getId()})}" th:text="${el.name}"></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+    <section class="section_paige" th:each="el : ${review}">
+        <div class="main_page_div">
+            <p class="name_page_review" th:text="${el.name}"></p>
+            <img class="img_review" th:src="${el.filename1}" alt="">
+            <div class="main_page_p"><p class="text_review" th:text="${el.text_full}"></p>
+            </div>
+            <a th:href="@{/review/pages/{id}(id=${el.getId})}"><button class="button_review" >Подробнее</button></a>
+        </div>
+    </section>
+    <hr>
+    <footer th:insert="basic/footer::footer"></footer>
+</div>
+</body>
+</html>

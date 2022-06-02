@@ -1,0 +1,28 @@
+<!doctype html>
+<html >
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/addNews.css">
+    <link rel="icon" type="images/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AddReview</title>
+</head>
+<body class="addBody" background="https://gamerwall.pro/uploads/posts/2021-11/1637071150_52-gamerwall-pro-p-prozrachnaya-tekstura-oboi-na-zastavku-52.jpg">
+<div class="container mt-5 mb-5">
+    <h1>Добавить свой отзыв</h1>
+    <form action="/add_review" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Введите бренд и модель кросовок" class="form-control"><br>
+        <textarea  name="text_full" placeholder="Введите полный текст  статьи" class="form-control"></textarea><br>
+        Добавить изображение 1  : <input type="file" multiple name="filename1"><br> <br>
+        Добавить изображение 2  : <input type="file"  name="filename2"><br> <br>
+        Добавить изображение 3  : <input type="file" name="filename3"><br> <br>
+        Добавить изображение 4  : <input type="file" name="filename4"><br> <br>
+        Добавить изображение 5  : <input type="file" name="filename5"><br> <br>
+        <button type="submit" class="btn btn-success">Добавить отзыв</button>
+    </form>
+</div>
+</body>
+</html>

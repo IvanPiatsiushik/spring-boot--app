@@ -1,6 +1,5 @@
 package com.example.sneakersworld.model;
 
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

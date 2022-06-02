@@ -1,0 +1,38 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:text="${review1.get.getName()}"></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/article.css">
+    <link rel="icon" type="images/png" href="favicon.png">
+</head>
+<body>
+<div class="main">
+    <header th:insert="basic/header :: header"></header>
+    <hr class="hr">
+    <section class="section1" >
+        <div   class="alert alert-info mt-2">
+            <div class="containers">
+                <div>
+                    <img th:src= "${review1.get.getFilename1()}" class="img_pages">
+                    <div th:text="${review1.get.getName()}" class="text1" ></div>
+                    <div th:text="${review1.get.getText_full}" class="text" ></div>
+                    <img th:src= "${review1.get.getFilename2()}"  class="img_pages">
+                    <img th:src= "${review1.get.getFilename3()}"  class="img_pages">
+                    <img th:src= "${review1.get.getFilename4()}"  class="img_pages">
+                    <img th:src= "${review1.get.getFilename5()}"  class="img_pages">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer th:insert="basic/footer::footer"></footer>
+</div>
+</body>
+</html>
