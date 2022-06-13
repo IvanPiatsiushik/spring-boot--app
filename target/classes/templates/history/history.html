@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/news.css">
+    <link rel="stylesheet" href="/static/pagination.css">
+
 </head>
 <body  >
 <div class="main">
@@ -38,7 +40,9 @@
             </div>
         </div>
 </section>
-<hr>
+    <section th:insert="basic/pagination :: pagination"></section>
+
+    <hr>
 <footer th:insert="basic/footer::footer"></footer>
 </div>
 </body>

@@ -20,7 +20,12 @@
         <input type="file" name="main_photo" ><br><br>
         <button type="submit" class="btn btn-success">Добавить статью</button>
     </form>
-<!--    <table th:text="${history}"></table>-->
+    <table border="1px" th:each="el : ${history}">
+        <tr>
+           <td th:text="${el.name}"></td>
+           <td th:text="${el.main_photo}"></td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>

@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/review.css">
     <link rel="icon" type="images/png" href="favicon.png">
+    <link rel="stylesheet" href="/static/pagination.css">
+
 </head>
 <body>
 <div class="main">
@@ -47,6 +49,7 @@
             <a th:href="@{/review/pages/{id}(id=${el.getId})}"><button class="button_review" >Подробнее</button></a>
         </div>
     </section>
+    <section th:insert="basic/pagination :: pagination"></section>
     <hr>
     <footer th:insert="basic/footer::footer"></footer>
 </div>

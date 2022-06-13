@@ -10,7 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/news.css">
+  <link rel="stylesheet" href="/static/pagination.css">
   <link rel="icon" type="images/png" href="favicon.png">
+
 </head>
 <body>
 <div class="main">
@@ -35,6 +37,13 @@
       </div>
     </div>
   </section>
+
+<!--  <p>На странице отображено  <span th:text="${newsCurrentPageCount}"></span> новостей из <span th:text="${newsAllCount}"></span></p>-->
+<!--  <p th:text="${newsCurrentPageCount}"></p>-->
+<!--  <p  th:each="num :${numbers}"></p>-->
+<!--  <p  th:text="${getnumber}"></p>-->
+
+<section th:insert="basic/pagination :: pagination"></section>
   <hr>
   <footer th:insert="basic/footer::footer"></footer>
 </div>

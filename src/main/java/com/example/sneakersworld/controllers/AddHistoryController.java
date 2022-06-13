@@ -4,6 +4,7 @@ import com.example.sneakersworld.model.History;
 import com.example.sneakersworld.repository.HistoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +29,9 @@ public class AddHistoryController {
     }
 
     @GetMapping("/add_history")
-    public String history_add1(){
+    public String history_add1(Model model){
+        Iterable<History> history = historyrepository.findAll(Sort.by("id").descending());
+        model.addAttribute("history",history);
         return "add/add_history";
     }
     @PostMapping("/add_history")
