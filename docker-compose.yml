@@ -17,7 +17,9 @@ services:
     build: ./
     container_name: 'sneaker'
     ports:
-      - "3033:3033"
+      - "8080:3033"
     environment:
      - POSTGRES_HOST=postgres_db
+    volumes:
+      - ./uploads
     restart: always
