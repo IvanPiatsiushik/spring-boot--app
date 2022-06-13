@@ -3,6 +3,7 @@ package com.example.sneakersworld.controllers;
 import com.example.sneakersworld.model.News;
 import com.example.sneakersworld.repository.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +13,8 @@ import java.util.stream.IntStream;
 
 @Controller
 public class NewsController {
+    @Value("${url.fromNews}")
+    private String urlFromNews;
     @Autowired
     private NewsRepository newsRepository;
 
@@ -21,8 +24,8 @@ public class NewsController {
                        @RequestParam (value = "page",required = false,defaultValue = "0") Integer page)
     {
 
-        String url = "http://localhost:3333/news";
-        model.addAttribute("url",url);
+//        String url = "http://localhost:3333/news";
+        model.addAttribute("url",urlFromNews);
         model.addAttribute("page",page);
 
 

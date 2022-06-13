@@ -4,6 +4,7 @@ import com.example.sneakersworld.model.History;
 import com.example.sneakersworld.model.News;
 import com.example.sneakersworld.repository.HistoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -17,6 +18,8 @@ import java.util.stream.IntStream;
 
 @Controller
 public class HistoryController {
+    @Value("${url.fromHistory}")
+    private String urlFromHistory;
     @Autowired
     private final HistoryRepository historyrepository;
 
@@ -27,8 +30,7 @@ public class HistoryController {
     public String history(Model model , @RequestParam(value = "size",required = false,defaultValue = "10") Integer size,
                                         @RequestParam (value = "page",required = false,defaultValue = "0") Integer page){
 
-        String url = "http://localhost:3333/history";
-        model.addAttribute("url",url);
+        model.addAttribute("url",urlFromHistory);
         model.addAttribute("page",page);
 
         Page<History> historyPage = (Page<History>) historyrepository.findAll((Pageable) PageRequest.of(page,size).withSort(Sort.by("id").descending()));

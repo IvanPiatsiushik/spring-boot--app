@@ -4,6 +4,7 @@ import com.example.sneakersworld.model.News;
 import com.example.sneakersworld.model.Review;
 import com.example.sneakersworld.repository.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -17,14 +18,16 @@ import java.util.stream.IntStream;
 
 @Controller
 public class ReviewController {
+    @Value("${url.fromReview}")
+    private String urlFromReview;
     @Autowired
     private ReviewRepository reviewRepository;
     @GetMapping("/review")
     public String review(Model model ,@RequestParam(value = "size",required = false,defaultValue = "4") Integer size,
                                       @RequestParam (value = "page",required = false,defaultValue = "0") Integer page){
 
-        String url = "http://localhost:3333/review";
-        model.addAttribute("url",url);
+//        String url = "http://localhost:3333/review";
+        model.addAttribute("url",urlFromReview);
         model.addAttribute("page",page);
 
 
