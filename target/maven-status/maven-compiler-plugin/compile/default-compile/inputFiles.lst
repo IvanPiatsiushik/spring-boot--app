@@ -8,6 +8,7 @@
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/AddHistoryController.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/repository/HistoryRepository.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/model/Review.java
+/home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/RedactorController.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/Security/SecurityConfig.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/HistoryController.java
 /home/lenovo/IdeaProjects/sneakersWorld/src/main/java/com/example/sneakersworld/controllers/ReviewController.java

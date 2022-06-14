@@ -31,6 +31,7 @@ public class ReviewController {
         model.addAttribute("page",page);
 
 
+
         Page<Review> reviewPage = (Page<Review>) reviewRepository.findAll((Pageable) PageRequest.of(page,size).withSort(Sort.by("id").descending()));
 
         model.addAttribute("news",reviewPage);

@@ -8,6 +8,7 @@ com/example/sneakersworld/controllers/AddReviewController.class
 com/example/sneakersworld/config/MvcConfig.class
 com/example/sneakersworld/controllers/HomeController.class
 com/example/sneakersworld/controllers/AddHistoryController.class
+com/example/sneakersworld/controllers/RedactorController.class
 com/example/sneakersworld/controllers/ReviewController.class
 com/example/sneakersworld/model/Role.class
 com/example/sneakersworld/controllers/HistoryController.class

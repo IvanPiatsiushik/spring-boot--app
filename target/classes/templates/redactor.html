@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table th:each="el :${review_redactor}" border="1" width="1200px">
+    <tr>
+        <td th:text="${el.id}">id</td>
+        <td th:text="${el.name}">name</td>
+        <td th:text="${el.text_full}">full_text</td>
+        <button>Delete</button>
+    </tr>
+</table>
+</body>
+</html>
